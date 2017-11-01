@@ -98,6 +98,12 @@ class HelloWorld {
   - プログラム(僕たちが書いたもの)をコンピュータが実行可能な形式に変換すること
   - 今回は`.java`ファイルを`.class`ファイルにしている
   - JVMの上で実行するには`.class`ファイルにコンパイルする必要がある
+  - `javac (java file)`
+    - javaファイルをコンパイルする
+  - `java (class name)`
+    - クラス名を指定してJVM上で実行する
+  - `java -classpath (jar file) (class name)`
+    - classpathを紐づける
 
 
 ### HelloWorldの考察

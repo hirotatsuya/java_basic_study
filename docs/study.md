@@ -47,6 +47,7 @@
   3. Java SE Development Kit 9.0.1をダウンロードする
     - 10分くらい
     - 同意してから
+    - ![image](https://github.com/hirotatsuya/java_basic_study/blob/images/jdk_install.png 'image')
   4. ダウンロードした`.exe`ファイルを実行し、インストールを進める
     - `.exe`ファイルとは？拡張子とは?
       - `.exe`ファイルとは実行ファイルのこと

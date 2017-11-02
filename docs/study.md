@@ -116,7 +116,22 @@ class HelloWorld {
   - `java -classpath (jar file) (class name)`
     - classpathを紐づける
 - `jshell`について
-  - Todo: 要調査
+  - ターミナルで`jshell`と入力する
+  - 以下のコードを入力する
+  ```java
+  System.out.println('Hello jshell')
+  ```
+  - `/exit`でjshellを抜ける
+
+- シェルとは
+  - ユーザからのコマンドを受け取りそのコマンドを実行するためのプログラムのこと
+  - 中身
+  - gitbash
+- ターミナル
+  - 端末エミュレータ
+  - 見た目や操作性を担当する
+  - 外身
+  - conemu
 
 ---
 

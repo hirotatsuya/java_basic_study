@@ -40,21 +40,21 @@
 
 ## JavaJDKのインストール
 - JavaJDKのインストール
-  - Oracleの公式サイトよりJDKのダウンロードページに遷移する
+  1. Oracleの公式サイトよりJDKのダウンロードページに遷移する
     - [`http://www.oracle.com/technetwork/java/javase/downloads/index.html`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-  - 自分のPCのOSの確認
+  2. 自分のPCのOSの確認
    - `設定/システム/バージョン情報/システムの種類`から何ビットか見る
     - 恐らく64ビット
-  -  `Java SE Development Kit 9.0.1`をダウンロードする
+  3. `Java SE Development Kit 9.0.1`をダウンロードする
     - 10分くらい
     - 同意してから
-  -  ダウンロードした`.exe`ファイルを実行し、インストールを進める  
+  4. ダウンロードした`.exe`ファイルを実行し、インストールを進める  
     ![image](https://github.com/hirotatsuya/java_basic_study/blob/images/jdk_install.png 'image')
     - JDKがどこにインストールされたのか覚えておく
     - `.exe`ファイルとは？拡張子とは?
       - `.exe`ファイルとは実行ファイルのこと
       - 拡張子とはファイルの種類を識別するためのもの
-  - pathを設定する
+  5. pathを設定する
     - `コントロールパネル/システムとセキュリティ/システム/システムの詳細設定/環境変数/`から環境変数を切る
     - 新規追加または`Path`を編集からjavaのpathを設定する
     - javaは慣習として`JAVA_HOME`という環境変数名を設定する
@@ -66,10 +66,10 @@
       - OSが提供するデータ共有システムのこと
       - 簡単に言うとコンピュータが持っているデータを格納する箱
       - コマンドプロンプトで`set`と入力すると環境変数の一覧がみられる
-    - なぜ環境変数を設定するのか?
+    - なぜ環境変数を設定するのか? → あとで復習する
       - 毎回`C:\Program Files\Java\jdk1.8.0_131\bin\javac.ext`見たいに書くのが面倒だから
       - 簡単なショートカットキーみたいなもの
-  - コマンドプロンプトで`java -version`と入力する
+  6. コマンドプロンプトで`java -version`と入力する
     - コマンドプロンプトは`cortana`さんに`cmd`と入力すると表示される
 
 ---

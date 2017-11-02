@@ -2,7 +2,7 @@
 
 ### もくじ
 - [はじめに](#はじめに)
-- [JavaJDKのインストール](#javajdkのインストール)
+- [JDKのインストール](#jdkのインストール)
 - [HelloWorld!](#helloworld)
 - [HelloWorldの考察](#helloworldの考察)
 - [変数](#変数)
@@ -18,7 +18,6 @@
   - 「最近寒いね～～」
   - 「でも今回の研修は、、熱くいこう！！」
     → ***アイスブレイク***
-
 - タイピング
   - [`https://www.e-typing.ne.jp/`](https://www.e-typing.ne.jp/)
   - 目標は、前回プラス20点
@@ -36,29 +35,32 @@
   - ~~間違えたら居残り~~  みんなで復習
 
 
-## JavaJDKのインストール
-- JavaJDKのインストール
-  1. Oracleの公式サイトよりJDKのダウンロードページに遷移する
+## JDKのインストール
+- JDKのインストール
+  - Oracleの公式サイトよりJDKのダウンロードページに遷移する
     - [`http://www.oracle.com/technetwork/java/javase/downloads/index.html`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-  2. 自分のPCのOSの確認
-   - `設定/システム/バージョン情報/システムの種類`から何ビットか見る
+  - 自分のPCのOSの確認
+    - `設定/システム/バージョン情報/システムの種類`から何ビットか見る
     - 恐らく64ビット
-  3. `Java SE Development Kit 9.0.1`をダウンロードする
+  - `Java SE Development Kit 9.0.1`をダウンロードする
     - 10分くらい
     - 同意してから
-  4. ダウンロードした`.exe`ファイルを実行し、インストールを進める  
+  - ダウンロードした`.exe`ファイルを実行し、インストールを進める
+
     ![image](https://github.com/hirotatsuya/java_basic_study/blob/images/jdk_install.png 'image')
+
     - JDKがどこにインストールされたのか覚えておく
     - `.exe`ファイルとは？拡張子とは?
       - `.exe`ファイルとは実行ファイルのこと
       - 拡張子とはファイルの種類を識別するためのもの
-  5. pathを設定する
+  - pathを設定する
     - `コントロールパネル/システムとセキュリティ/システム/システムの詳細設定/環境変数/`から環境変数を切る
-    - 新規追加または`Path`を編集からjavaのpathを設定する
-    - javaは慣習として`JAVA_HOME`という環境変数名を設定する
+    - `Path`の編集からJDKのpathを設定する
+    - `JAVA_HOME`という変数名で環境変数を設定する
+      - 理由: tomcatでjavaを用いるときにJAVA_HOMEを使っているため
       - 定数は大文字にするでスネークケースが多い
         - キャメルケースというのもある(ラクダのこぶ)
-    - 値はインストールしたjavaの場所を設定する
+    - 値はインストールしたJDKの場所を設定する
       - `C:\Program Files\Java\jdk1.8.0_131`にあると思う
     - 環境変数とは？
       - OSが提供するデータ共有システムのこと
@@ -67,7 +69,7 @@
     - なぜ環境変数を設定するのか? → あとで復習する
       - 毎回`C:\Program Files\Java\jdk1.8.0_131\bin\javac.ext`見たいに書くのが面倒だから
       - 簡単なショートカットキーみたいなもの
-  6. コマンドプロンプトで`java -version`と入力する
+  - コマンドプロンプトで`java -version`と入力する
     - コマンドプロンプトは`cortana`さんに`cmd`と入力すると表示される
 
 
@@ -77,33 +79,38 @@
 ## HelloWorld!
 - mainメソッドの暗記
 
-```HelloWorld.java
-class HelloWorld {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
-	}
-}
-```
+  ```HelloWorld.java
+  class HelloWorld {
+    public static void main(String[] args) {
+      System.out.println("Hello World!");
+    }
+  }
+  ```
 
-  - javaでは`main`メソッドが一番最初に呼び出される
-  - クラスに関しては、ただの設計図で実態ではないということだけ今は抑えておく
-
+  - HelloWorldクラスを定義している
+    - ファイル名はクラスメイト同様にするべき
+  - `main`メソッドとは、javaのプログラムで一番最初に呼び出されるメソッドのこと
+  - クラスに関しては、ただの設計図であって、実態ではないということだけ今は抑えておく
+  - `System.out.println()`
+    - System: クラス
+    - out: フィールド
+    - println: メソッド
 - コマンドプロンプト
   - コマンドプロンプトで遊んでみよう
-    1. `dir`
+    - `dir`
       - 今いるディレクトリのファイルやディレクトリ一覧の表示
       - 多くは`ls`でいける。。。
         - シェルの違い
-    2. `cd`
+    - `cd`
       - `cd ..`で一つ上のディレクトリに移動
       - `cd (target)`で指定したディレクトリに移動
-    3. `pwd`
+    - `pwd`
       - 自分が今いる場所を表示
-    4. `mkdir (directory_name)`
+    - `mkdir (directory_name)`
       - 新しいディレクトリを作成する
-    5. `exit`
+    - `exit`
       - cmdを抜ける
-    6. `java -version`
+    - `java -version`
       - javaのバージョン確認
       - javaがインストールされていない場合やpathが通っていない場合はバージョンが表示されない
 - コンパイルとは?
@@ -121,13 +128,12 @@ class HelloWorld {
   - ターミナルで`jshell`と入力する
   - 以下のコードを入力する
 
-  ```java
-  System.out.println("Hello jshell")
-  ```
+    ```java
+    System.out.println("Hello jshell")
+    ```
 
-  - `Hello jshell`と出力される
-  - `/exit`でjshellを抜ける
-
+    - `Hello jshell`と出力される
+    - `/exit`でjshellを抜ける
 - シェルとは
   - ユーザからのコマンドを受け取りそのコマンドを実行するためのプログラムのこと
   - 中身

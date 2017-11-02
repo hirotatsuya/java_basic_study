@@ -1,9 +1,9 @@
-// 20171101 hirota
+// Created by hirotatsu on 2017/11/01.
 class HelloWorld {
-	public static void main(String[] args) {
+  public static void main(String[] args) {
     // メソッドを呼び出す
-		sayHello();
-	}
+    sayHello();
+  }
 
   // メソッドの定義
   public static void sayHello() {

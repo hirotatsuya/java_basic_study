@@ -116,7 +116,8 @@ class HelloWorld {
     - クラス名を指定してJVM上で実行する
   - `java -classpath (jar file) (class name)`
     - classpathを紐づける
-- `jshell`について
+- `jshell`について(簡単に)
+  - インタプリンタの特性を生かしたREPL
   - ターミナルで`jshell`と入力する
   - 以下のコードを入力する
 

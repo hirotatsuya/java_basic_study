@@ -21,9 +21,9 @@
     → ***アイスブレイク***
 
 - タイピング
-  - `https://www.e-typing.ne.jp/`
+  - [`https://www.e-typing.ne.jp/`](https://www.e-typing.ne.jp/)
   - 目標は、前回プラス20点
-  - 僕もやるｗ
+  - ~~僕もやるｗ~~ 
 - 前回の内容の不明点確認
   - HTML,CSS,JavaScriptの講義の不明点や気になる点はないかどうか
 - 今日の講義の進め方
@@ -40,30 +40,36 @@
 
 ## JavaJDKのインストール
 - JavaJDKのインストール
-  1. Oracleの公式サイトよりJDKのダウンロードページに遷移する
-    - `http://www.oracle.com/technetwork/java/javase/downloads/index.html`
-  2. 自分のPCのOSの確認
-    - `設定/システム/バージョン情報/システムの種類`から何ビットか見る
-  3. Java SE Development Kit 9.0.1をダウンロードする
+  - Oracleの公式サイトよりJDKのダウンロードページに遷移する
+    - [`http://www.oracle.com/technetwork/java/javase/downloads/index.html`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+  - 自分のPCのOSの確認
+   - `設定/システム/バージョン情報/システムの種類`から何ビットか見る
+    - 恐らく64ビット
+  -  `Java SE Development Kit 9.0.1`をダウンロードする
     - 10分くらい
-    - 同意してから  
-      ![image](https://github.com/hirotatsuya/java_basic_study/blob/images/jdk_install.png 'image')
-
-  4. ダウンロードした`.exe`ファイルを実行し、インストールを進める
+    - 同意してから
+  -  ダウンロードした`.exe`ファイルを実行し、インストールを進める  
+    ![image](https://github.com/hirotatsuya/java_basic_study/blob/images/jdk_install.png 'image')
+    - JDKがどこにインストールされたのか覚えておく
     - `.exe`ファイルとは？拡張子とは?
       - `.exe`ファイルとは実行ファイルのこと
       - 拡張子とはファイルの種類を識別するためのもの
-  5. pathを設定する
+  - pathを設定する
     - `コントロールパネル/システムとセキュリティ/システム/システムの詳細設定/環境変数/`から環境変数を切る
-    - 新規追加または`Paht`を編集からjavaのpathを設定する
+    - 新規追加または`Path`を編集からjavaのpathを設定する
     - javaは慣習として`JAVA_HOME`という環境変数名を設定する
-    - 値はインストールしたjavaの場所を示す
+      - 定数は大文字にするでスネークケースが多い
+        - キャメルケースというのもある(ラクダのこぶ)
+    - 値はインストールしたjavaの場所を設定する
       - `C:\Program Files\Java\jdk1.8.0_131`にあると思う
     - 環境変数とは？
       - OSが提供するデータ共有システムのこと
       - 簡単に言うとコンピュータが持っているデータを格納する箱
       - コマンドプロンプトで`set`と入力すると環境変数の一覧がみられる
-  6. コマンドプロンプトで`java -version`と入力する
+    - なぜ環境変数を設定するのか?
+      - 毎回`C:\Program Files\Java\jdk1.8.0_131\bin\javac.ext`見たいに書くのが面倒だから
+      - 簡単なショートカットキーみたいなもの
+  - コマンドプロンプトで`java -version`と入力する
     - コマンドプロンプトは`cortana`さんに`cmd`と入力すると表示される
 
 ---
@@ -118,20 +124,20 @@ class HelloWorld {
 - `jshell`について
   - ターミナルで`jshell`と入力する
   - 以下のコードを入力する
+
   ```java
-  System.out.println('Hello jshell')
+  System.out.println("Hello jshell")
   ```
+
+  - `Hello jshell`と出力される
   - `/exit`でjshellを抜ける
 
 - シェルとは
   - ユーザからのコマンドを受け取りそのコマンドを実行するためのプログラムのこと
   - 中身
-  - gitbash
 - ターミナル
-  - 端末エミュレータ
-  - 見た目や操作性を担当する
+  - 見た目や操作性を担当する端末エミュレータ
   - 外身
-  - conemu
 
 ---
 

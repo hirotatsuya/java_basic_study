@@ -18,4 +18,12 @@ Java Basic Study
   - `Method1~5.java`
     - メソッドのエクササイズの解答
   - `HelloWorld.java`
-    - 
+    - メソッドのエクササイズの例
+  - `Temp.java`
+    - 文字コードによるエラー時の対応
+- package.json
+  - 気にしなくていい
+  - プロジェクトを管理するためのファイル
+- .gitignore
+  - 気にしなくていい
+  - git管理から外すファイルの設定

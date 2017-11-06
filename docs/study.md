@@ -131,7 +131,6 @@
 
 
 ## HelloWorldの考察
-- `write once run anywhere`
 - mainメソッドの暗記
 
   ```HelloWorld.java

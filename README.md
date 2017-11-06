@@ -21,6 +21,12 @@ Java Basic Study
     - メソッドのエクササイズの例
   - `Temp.java`
     - 文字コードによるエラー時の対応
+    - 参照値比較の例
+    - 三項演算子の例
+  - `SwitchSample.java`
+    - 分岐構造の中の制御構文にて`switch`の例
+  - `ExtensionForSample.java`
+    - 拡張for文の例
 - package.json
   - 気にしなくていい
   - プロジェクトを管理するためのファイル

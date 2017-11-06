@@ -306,3 +306,5 @@
   - [`http://java-code.jp/`](http://java-code.jp/)
 - ドットインストール
   - [`https://dotinstall.com/lessons/basic_java_v2`](https://dotinstall.com/lessons/basic_java_v2)
+- Java8のAPIドキュメント
+  - [`https://docs.oracle.com/javase/jp/8/docs/api/`](https://docs.oracle.com/javase/jp/8/docs/api/)

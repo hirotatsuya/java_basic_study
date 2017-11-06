@@ -289,6 +289,6 @@
 ---
 ## 参考資料
 - Javaコード入門
-  - [http://java-code.jp/](#http://java-code.jp/)
+  - [`http://java-code.jp/`](http://java-code.jp/)
 - ドットインストール
-  - [https://dotinstall.com/lessons/basic_java_v2](https://dotinstall.com/lessons/basic_java_v2)
+  - [`https://dotinstall.com/lessons/basic_java_v2`](https://dotinstall.com/lessons/basic_java_v2)

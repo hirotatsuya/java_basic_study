@@ -10,7 +10,7 @@ Java Basic Study
   - `Var1~4.java`
     - 変数のエクササイズの解答
   - `IfSample1~3.java`
-    - `分岐構文のエクササイズの解答
+    - 分岐構文のエクササイズの解答
   - `ForSample1~6.java`
     - 反復構文のエクササイズの解答
   - `Array1~6.java`
@@ -27,9 +27,9 @@ Java Basic Study
     - 分岐構造の中の制御構文にて`switch`の例
   - `ExtensionForSample.java`
     - 拡張for文の例
-- package.json
+- `package.json`
   - 気にしなくていい
   - プロジェクトを管理するためのファイル
-- .gitignore
+- `.gitignore`
   - 気にしなくていい
   - git管理から外すファイルの設定

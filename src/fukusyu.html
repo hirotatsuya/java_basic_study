@@ -1,0 +1,24 @@
+<!DOCYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>復習</title>
+  </head>
+  <body>
+    <h3>復習しましょう</h3>
+    <ol>
+      <li>テキストボックスに値を入れてください</li>
+      <li>ボタンをクリックしてください</li>
+    </ol>
+    <input type="text" id="text" placeholder="text">
+    <span> </span>
+    <input type="button" value="ボタン" onclick="clickButton()">
+    <script>
+      var clickButton = function () {
+        var text = document.getElementById('text').value
+        console.log("ボタンが押されました")
+        alert("テキスト: " + text)
+      }
+    </script>
+  </body>
+</html>

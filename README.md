@@ -27,9 +27,6 @@ Java Basic Study
     - 分岐構造の中の制御構文にて`switch`の例
   - `ExtensionForSample.java`
     - 拡張for文の例
-- `package.json`
-  - 気にしなくていい
-  - プロジェクトを管理するためのファイル
 - `.gitignore`
   - 気にしなくていい
   - git管理から外すファイルの設定
